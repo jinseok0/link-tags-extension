@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "react-app"
+  ],
+  "plugins": [
+    "no-storage"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts?(x)"
+      ],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": [
+          "error"
+        ],
+        "no-storage/no-browser-storage": 2
+      }
+    }
+  ]
+}
